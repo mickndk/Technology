@@ -1,0 +1,49 @@
+.content-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 30px;
+}
+.content-innovation .desc p{
+    padding: 30px;
+    font-size: 18px;
+    color: rgb(188, 183, 183);
+}
+.Innovation-videos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:900px) {
+    .Innovation-videos{
+        display: flex;
+        text-align: center;
+    }
+    .ct-iframe iframe{
+      width: 380px;
+      margin: 20px;
+    }
+    
+}
+@media (max-width:600px) {
+    .content-innovation{
+        display: block;
+      text-align: center;
+    } 
+    .content-item{
+        display: block;
+        text-align: center;
+    }
+    .desc img{
+       text-align: center;
+    }
+    .Innovation-videos{
+        display: block;
+        text-align: center;
+    }
+    .ct-iframe iframe{
+      width: 400px;
+      margin: 20px;
+    }
+    
+}

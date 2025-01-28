@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.navbar i{
+    color: red;
+}
+.navbar .icon {
+    color: red;
+    display: none;
+}
+h1 span {
+    color: red; 
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 0px 10px;
+}
+
+.menu ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: red; 
+}
+
+.dropbar {
+    display: none;
+}
+
+.menu ul li:hover .dropbar {
+    display: block;
+    position: absolute;
+}
+
+.menu ul li:hover .dropbar ul {
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 140px;
+
+}
+
+.menu ul li:hover .dropbar ul li {
+    display: block;
+    border: 1px solid whitesmoke;
+    padding: 7px 0px;
+}
+.section1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/download\ \(6\).jpeg);
+    background-attachment: fixed;
+    height: 380px;
+    text-align: center;
+}
+
+.s1 h1 {
+    font-size: 50px;
+    padding-top: 130px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.s1 p {
+    font-size: 20px; 
+    color: white;
+}
+.content {
+    margin: 40px;
+}
+
+.content h2 {
+    font-size: 30px;
+    color: black;
+    padding: 10px 0px;
+}
+
+.content h1 {
+    padding: 10px 0px;
+}
+.content p{
+    font-size: 18px;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.section3 .s3{
+    background-color: transparent;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+    transition: 2s ;
+    background-color: rgb(31, 30, 30);
+    color: whitesmoke;
+    border: 1px solid #ccc;
+}
+.section3 .s3:hover{
+    transform: scale(1.1);
+}
+.section3 i{
+    font-size: 40px;
+    padding: 20px;
+    color:red;
+}
+.section3 h3{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.btn {
+    padding: 20px;
+}
+
+.btn a {
+    border: 2px solid red;  
+    background-color: transparent;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+.desc h1 {
+    padding: 0px 20px;
+}
+
+.ft .desc p {
+    color: #656363;
+}
+
+footer p {
+    padding: 10px 0px;
+}
+.ft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-menu h4 {
+    padding: 20px 0px;
+}
+
+.footer-menu ul li {
+    padding: 5px 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #656363;
+}
+
+.footer-menu ul li a:hover {
+    color: red; 
+}
+
+footer p {
+    text-align: center;
+}
+.ft .ic{
+    padding: 10px 20px ;
+}
+.ft i{
+    font-size: 20px;
+    padding: 10px;
+    color:red;
+} 
+@media (max-width: 900px) {
+        .navbar {
+            justify-content: space-between;
+        }
+        .menu {
+            display: none; 
+        }
+        .menu ul {
+            background-color: black;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+    
+        .menu ul li {
+            margin: 10px 0;
+        }
+    
+        .navbar .icon {
+            display: flex; 
+            font-size: 25px;
+          cursor: pointer;
+            color: white;
+        }
+        .section1 .s1{
+            position: absolute;
+            top: 0;
+        }
+        .content{
+            text-align: center;
+        }
+
+        .section3{
+            display: block;
+            text-align: center;
+        }
+        .section3 .s3{
+            margin: 40px;
+
+        }
+        .ft {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+   
